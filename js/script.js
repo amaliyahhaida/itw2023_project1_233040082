@@ -15,17 +15,17 @@ function opentab(tabname) {
 
 //side menu
 var sidemenu = document.getElementById('sidemenu');
-function openmenu(){
+function openmenu() {
     sidemenu.style.right = '0';
 }
 function closemenu() {
     sidemenu.style.right = '-200px';
-  }
+}
 // end side mneu
 
 // Speedsheets
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwhk4XDO9ULGKDwC75CyVh9jkOgMkHd6331ZdQH0GKFjMfH3N-7mxo_oPerpIrC_XhHQg/exec';
-const form = document.forms['submit-to-google-sheet'];
+const form = document.forms['Submit-From-to-Google-Sheets'];
 
 form.addEventListener('submit', e => {
   e.preventDefault();

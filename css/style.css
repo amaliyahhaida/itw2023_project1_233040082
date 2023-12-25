@@ -209,9 +209,9 @@ nav ul li a:hover::after {
     background: #A6CF98;
     transform: translateY(-10px);
 }
-  /* Akhir Education */
+/* Akhir Education */
 
-  /* Portfolio */
+/* Portfolio */
 #gallery {
     padding: 50px 0;
 }
@@ -229,7 +229,7 @@ nav ul li a:hover::after {
     overflow: hidden;
 }
   
-  .work img {
+.work img {
     width: 100%;
     border-radius: 10px;
     display: block;
@@ -362,7 +362,7 @@ form .btn2 {
     margin-top: 20px;
     cursor: pointer;
 }
-  /* Akhir Contact */
+/* Akhir Contact */
   
 /* Copyright */
 .copyright {
@@ -375,7 +375,7 @@ form .btn2 {
 }
   /* Akhir Copyright */
   
-  /* ------------------ CSS for small screens ------------------ */
+/* ------------------ CSS for small screens ------------------ */
 nav .fa-solid {
     display: none;
 }
@@ -383,19 +383,23 @@ nav .fa-solid {
 @media only screen and (max-width: 600px) {
 #header {
     background-image: url(img/background.png);
-  }
-  .header-text {
+}
+
+.header-text {
     margin-top: 100%;
     font-size: 16px;
-  }
-  .header-text h1 {
+}
+
+.header-text h1 {
     font-size: 30px;
-  }
-  nav .fa-solid {
+}
+
+nav .fa-solid {
     display: block;
     font-size: 25px;
     }
-  nav ul {
+
+nav ul {
     background: #A6CF98;
     position: fixed;
     top: 0;
@@ -405,45 +409,44 @@ nav .fa-solid {
     padding-top: 50px;
     z-index: 2;
     transition: right 0.5s;
-  }
-  nav ul li {
+}
+
+nav ul li {
     display: block;
     margin: 25px;
-  }
+}
   
-  nav ul li a::after {
+nav ul li a::after {
     background: #fff;
-  }
+}
   
-  nav ul .fa-solid {
+nav ul .fa-solid {
     position: absolute;
     top: 25px;
     left: 25px;
     cursor: pointer;
-  }
+}
 
-  .sub-title {
+.sub-title {
     font-size: 40px;
-    }
+}
     
-  .about-col-1,
-  .about-col-2 {
+.about-col-1, .about-col-2 {
     flex-basis: 100%;
-    }
-  .about-col-1 {
+}
+.about-col-1 {
     margin-bottom: 30px;
-  }
-  .about-col-2 {
+}
+.about-col-2 {
     font-size: 14px;
-  }
-  .tab-links {
+}
+.tab-links {
     font-size: 16px;
     margin-right: 20px;
-  }
-  .contact-left,
-  .contact-right {
+}
+.contact-left, .contact-right {
     flex-basis: 100%;
-  }
+}
   .copyright {
     font-size: 14px;
   }
