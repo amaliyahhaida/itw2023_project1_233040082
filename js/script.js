@@ -1,3 +1,4 @@
+// tab open
 var tablinks = document.getElementsByClassName('tab-links');
 var tabcontents = document.getElementsByClassName('tab-contents');
 function opentab(tabname) {
@@ -10,3 +11,27 @@ function opentab(tabname) {
     event.currentTarget.classList.add('active-link');
     document.getElementById(tabname).classList.add('active-tab');
 }
+// end tab open
+
+//side menu
+var sidemenu = document.getElementById('sidemenu');
+function openmenu(){
+    sidemenu.style.right = '0';
+}
+function closemenu() {
+    sidemenu.style.right = '-200px';
+  }
+// end side mneu
+
+// Speedsheets
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwhk4XDO9ULGKDwC75CyVh9jkOgMkHd6331ZdQH0GKFjMfH3N-7mxo_oPerpIrC_XhHQg/exec';
+const form = document.forms['submit-to-google-sheet'];
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => console.log('Success!', response))
+    .catch(error => console.error('Error!', error.message));
+});
+
+// end Speedsheets
